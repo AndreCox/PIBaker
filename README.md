@@ -42,4 +42,4 @@ These need to be installed to use the program. You can use winget (windows) or a
 
 Look for the stack called `pibaker` you can click on the stack and you should see 2 containers inside. You can monitor the Ansible container, when it is done both containers should stop.
 
-5. A file called Distro.img should appear in the dist folder. This is your final bootable image.
+5. A file called distro.img should appear in the dist folder. This is your final bootable image.
