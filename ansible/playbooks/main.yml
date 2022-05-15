@@ -7,11 +7,24 @@
     - name: Wait till RPI enters the running phase
       wait_for_connection:
 
+  #####################################################
+  # SET UP YOUR RASPBERRY PI WITH THE FOLLOWING STEPS #
+  #####################################################
+
   tasks:
     - name: Update the RPI
       apt:
         update_cache: yes
 
+    - name: Copy files to the RPI
+      copy:
+        src: /files/
+        dest: /home/pi/
+
+    ###########################################################################
+    # THE FOLLOWING SHOULDN'T BE MODIFIED UNLESS YOU KNOW WHAT YOU ARE DOING. #
+    ###########################################################################
+  post_tasks:
     - name: Shutdown the RPI
       shell: shutdown -h now
       ignore_unreachable: true

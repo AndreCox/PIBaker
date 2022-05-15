@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   pi-emulator:
+    # We use ptrsr/pi-ci in the future this may change to a custom image to support other raspberry pi OS's eg. Diet Pi
     image: ptrsr/pi-ci
     command: start
     volumes:
@@ -27,7 +28,7 @@ services:
 volumes:
   dist:
   playbook:
-  picarfiles:
+  files:
 
 networks:
   connector:

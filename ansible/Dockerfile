@@ -1,3 +1,5 @@
+# Based off of https://github.com/philm/ansible_playbook we needed to update the Ansible version
+
 FROM alpine:3.7
 
 ENV ANSIBLE_VERSION=2.9.9
