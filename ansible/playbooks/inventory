@@ -1,0 +1,9 @@
+
+[raspberries]
+172.16.238.10
+
+[raspberries:vars]
+ansible_connection=ssh
+ansible_user=pi
+ansible_password=raspberry
+ansible_port=2222

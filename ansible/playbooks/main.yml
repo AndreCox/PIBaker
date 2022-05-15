@@ -1,0 +1,33 @@
+---
+- hosts: raspberries
+  gather_facts: no
+  become: yes
+
+  pre_tasks:
+    - name: Wait till RPI enters the running phase
+      wait_for_connection:
+
+  tasks:
+    - name: Update the RPI
+      apt:
+        update_cache: yes
+
+    - name: Shutdown the RPI
+      shell: shutdown -h now
+      ignore_unreachable: true
+
+    - name: Install qemu on local machine
+      local_action:
+        module: apk
+        name: qemu-img
+        update_cache: yes
+
+    - name: Use qemu-img to create a disk image retry until the pi fully shuts down
+      local_action:
+        module: shell
+        cmd: qemu-img convert -f qcow2 -O raw /distro/distro.qcow2 /distro/distro.img
+      register: result
+
+      retries: 300
+      delay: 1
+      until: result.rc == 0
