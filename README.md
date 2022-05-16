@@ -28,7 +28,7 @@ These need to be installed to use the program. You can use winget (windows) or a
 
 1. Clone or download the repository
 
-`git clone --depth=1 https://github.com/PiCarV/Car-Software.git`
+`git clone --depth=1 https://github.com/AndreCox/PIBaker.git`
 
 2. Move into the PIBaker directory
 
