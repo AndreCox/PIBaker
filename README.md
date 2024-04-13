@@ -46,7 +46,7 @@ Look for the stack called `pibaker` you can click on the stack and you should se
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=andrecox/PiBaker&type=Date)](https://star-history.com/#andrecox/PiBaker&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=andrecox/PiBaker&type=Date)](https://star-history.com/#andrecox/PiBaker&Date&theme=dark)
 
 Thank you everyone for staring my project :)
 
