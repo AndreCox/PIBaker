@@ -44,5 +44,11 @@ Look for the stack called `pibaker` you can click on the stack and you should se
 
 5. A file called distro.img should appear in the dist folder. This is your final bootable image.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=andrecox/PiBaker&type=Date)](https://star-history.com/#andrecox/PiBaker&Date)
+
+Thank you everyone for staring my project :)
+
 ## Note
 I have had reports that M1 Macs have issues running this software, a work around for now is to run docker inside a Ubuntu VM.
