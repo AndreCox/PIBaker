@@ -31,9 +31,11 @@ RUN apk --update add --virtual build-dependencies \
         python-dev && \
     set -x && \
     apk update && apk upgrade && \
+    apk add --no-cache ca-certificates && \
+    update-ca-certificates && \
     apk add --no-cache ${BUILD_PACKAGES} && \
-    pip install --upgrade pip && \
-    pip install python-keyczar docker-py boto3 botocore && \
+    pip install --upgrade pip --trusted-host pypi.python.org && \
+    pip install python-keyczar docker-py boto3 botocore --trusted-host pypi.python.org && \
     apk del build-dependencies && \
     rm -rf /var/cache/apk/* && \
     mkdir -p /etc/ansible/ /ansible && \
