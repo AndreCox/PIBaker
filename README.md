@@ -22,7 +22,7 @@ These need to be installed to use the program. You can use winget (windows) or a
 ### [🐋 Docker](https://www.docker.com/get-started/)
 
 - Windows `winget install -e --id Docker.DockerDesktop`
-- Linux [Docker Desktop](https://docs.docker.com/desktop/linux/install/ubuntu/)
+- Linux [Docker Desktop](https://docs.docker.com/desktop/linux/install/ubuntu/) & Docker Compose
 
 ## How to use
 
